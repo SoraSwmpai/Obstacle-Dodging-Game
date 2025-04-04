@@ -6,7 +6,8 @@ public class ObjectHit : MonoBehaviour
 {
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Someone Just Hit Me!!!");
+        GetComponent<MeshRenderer>().material.color = Color.black;
+        
     }
 }
 
