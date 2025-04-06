@@ -14,7 +14,6 @@ public class FlyAtPlayer : MonoBehaviour
 
     void Start()
     {
-        
         playerPosition = player.transform.position;
     }
     void Update()
