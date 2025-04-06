@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class FlyAtPlayer : MonoBehaviour
@@ -5,8 +6,15 @@ public class FlyAtPlayer : MonoBehaviour
     Vector3 playerPosition;
     [SerializeField] Transform player; 
     [SerializeField] float projectileSpeed = 0.1f;
+
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+
     void Start()
     {
+        
         playerPosition = player.transform.position;
     }
     void Update()
